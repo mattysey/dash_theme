@@ -1,21 +1,6 @@
-/* Force Sticky Top Header */
-.rt-container .rt-thead,
-.rt-container table thead th,
-div[class*="ReportTable"] th,
-table.vis-table th {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 100 !important;
-  background-color: #f8f9fa !important;
-}
-
-/* Force Sticky Left Column */
-.rt-container table tbody td:first-child,
-.rt-container table thead th:first-child,
-div[class*="ReportTable"] td:first-child,
-table.vis-table td:first-child {
-  position: sticky !important;
-  left: 0 !important;
-  z-index: 90 !important;
-  background-color: #ffffff !important;
+/* Diagnostic Test: Bright Red Text & Background */
+* {
+  color: #ff0000 !important;
+  background-color: #ffff00 !important;
+  font-family: "Courier New", Courier, monospace !important;
 }
