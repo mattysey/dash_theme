@@ -1,15 +1,21 @@
-/* Freeze Top Headers */
-th, .rt-header-cell {
+/* Force Sticky Top Header */
+.rt-container .rt-thead,
+.rt-container table thead th,
+div[class*="ReportTable"] th,
+table.vis-table th {
   position: sticky !important;
   top: 0 !important;
-  z-index: 10 !important;
+  z-index: 100 !important;
   background-color: #f8f9fa !important;
 }
 
-/* Freeze First Left Column */
-td:first-child, th:first-child {
+/* Force Sticky Left Column */
+.rt-container table tbody td:first-child,
+.rt-container table thead th:first-child,
+div[class*="ReportTable"] td:first-child,
+table.vis-table td:first-child {
   position: sticky !important;
   left: 0 !important;
-  z-index: 5 !important;
+  z-index: 90 !important;
   background-color: #ffffff !important;
 }
